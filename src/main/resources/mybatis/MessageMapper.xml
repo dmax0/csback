@@ -1,0 +1,8 @@
+<mapper namespace="cn.withwang.cs.mapper.MessageMapper">
+
+    <insert id="insert" parameterType="cn.withwang.cs.entity.Message">
+        INSERT INTO tb_message (content, from_user_id, to_user_id, type, status, created_at, updated_at)
+        VALUES (#{content}, #{fromUserId}, #{toUserId}, #{type}, #{status}, #{createdAt}, #{updatedAt})
+    </insert>
+
+</mapper>
