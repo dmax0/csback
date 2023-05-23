@@ -5,9 +5,6 @@ import cn.withwang.cs.dto.response.UserResponse;
 import cn.withwang.cs.entity.User;
 
 import cn.withwang.cs.service.UserService;
-import cn.withwang.cs.utils.JwtUtils;
-import io.jsonwebtoken.Claims;
-import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
@@ -20,8 +17,6 @@ public class UserController {
 
     @Autowired
     private UserService userService;
-    @Autowired
-    private JwtUtils jwtUtils;
 
 
     @GetMapping

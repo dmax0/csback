@@ -20,4 +20,10 @@ public class TeamService {
     public Team getTeamById(int id) {
         return teamMapper.selectById(id);
     }
+
+    public Integer createTeam(Team team) {
+        int rows = teamMapper.insert(team);
+        return rows;
+
+    }
 }
